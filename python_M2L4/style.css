@@ -6,18 +6,60 @@ body {
     
 }
 
-h1 {
-    color: #FD98FB; /* Başlık rengi */
+
+
+
+h1  {
+    animation: color-change 3s infinite;
+    /*color: #fd98fb; /* Başlık rengi */
     font-size: 24px; /* Başlık yazı tipi boyutu */
     font-family: Georgia, serif; /* Başlıkta kullanılan yazı tipi ailesi */
     text-align: center;
 }
+
+@keyframes color-change {
+    0% {
+      color: #fd98fb;
+    }
+  
+    50% {
+      color: #af03ff;
+    }
+  
+    100% {
+      color: #fd98fb;
+    }
+}
+
+h1 {
+    animation: color-change 3s infinite;
+}
+
+h1:hover { animation: color-change 3s infinite; }
 
 h2 {
     color:#bfff1f;
     font-size: 20px;
     font-family:Georgia, serif;
     text-align: center;
+}
+
+@keyframes color-change2 {
+    0% {
+      color: #bfff1f;
+    }
+  
+    50% {
+      color: #1fffda;
+    }
+  
+    100% {
+      color: #bfff1f;
+    }
+}
+
+h2 {
+    animation: color-change2 3s infinite;
 }
 
 p {
